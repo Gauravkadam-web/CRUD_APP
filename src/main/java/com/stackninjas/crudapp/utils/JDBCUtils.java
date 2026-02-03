@@ -1,5 +1,7 @@
 package com.stackninjas.crudapp.utils;
 
+import com.stackninjas.crudapp.exception.StudentDAOException;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -13,7 +15,8 @@ public class JDBCUtils {
         try{
             Class.forName("org.postgresql.Driver");
         } catch (ClassNotFoundException e) {
-            e.printStackTrace();
+//            e.printStackTrace();
+            throw new StudentDAOException("Driver Initialization Failed",e);
         }
     }
 
