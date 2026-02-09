@@ -24,3 +24,12 @@ INSERT INTO student (name, email, mobile) VALUES
 ('Anjali Deshmukh','anjali.d@gmail.com',     '9876543219');
 
 SELECT * FROM student;
+
+INSERT INTO users (full_name, username, password) VALUES
+('Admin User', 'admin', 'e10adc3949ba59abbe56e057f20f883e'),
+('Gaurav Kadam', 'gaurav', 'e10adc3949ba59abbe56e057f20f883e'),
+('Rohit Sharma', 'rohit', 'e10adc3949ba59abbe56e057f20f883e'),
+('Anita Deshmukh', 'anita', 'e10adc3949ba59abbe56e057f20f883e'),
+('System User', 'system', 'e10adc3949ba59abbe56e057f20f883e');
+
+SELECT id, full_name, username, created_at FROM users;
