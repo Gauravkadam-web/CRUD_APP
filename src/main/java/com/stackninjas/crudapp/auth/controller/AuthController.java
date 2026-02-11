@@ -4,12 +4,19 @@ import com.stackninjas.crudapp.auth.dao.UserDAO;
 import com.stackninjas.crudapp.auth.dao.UserDAOImpl;
 import com.stackninjas.crudapp.auth.model.User;
 import com.stackninjas.crudapp.auth.utils.PasswordUtils;
+<<<<<<< Updated upstream
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
+=======
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.*;
+>>>>>>> Stashed changes
 
 import java.io.IOException;
 @WebServlet(urlPatterns = {"/","/auth"})
